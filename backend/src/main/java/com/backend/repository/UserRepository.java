@@ -5,4 +5,6 @@ import com.backend.model.User;
 
 public interface UserRepository extends JpaRepository<User, Long> {
 	User getuserByUsername(String username);
+
+    User getuserByUserId(Long userId);
 }
